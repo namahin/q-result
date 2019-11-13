@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Student Result Management System</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- UI kit CSS -->
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<link rel="stylesheet" href="css/uikit-rtl.min.css">
+	<!-- Google Fonts | Raleway -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!-- Local CSS files -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<header>
+		<div class="text-center main-header">
+			<div class="container">
+				<nav>
+					<h1>Student Result Management System</h1>
+					<p>Govt. Graphic Arts Institute, Dhaka</p>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="page-area">
+		<div class="container">
+			<div class="main-form">
+
+				<ul class="uk-subnav nam-btn-group" uk-switcher>
+					<li><a href="#">Result</a></li>
+					<li><a href="#">Admin Login</a></li>
+				</ul>
+
+				<ul class="uk-switcher form-contant">
+					<li>
+						<div class="result-form">
+							<form action="result_sheet.html">
+								<div class="input_group">
+									<p>Roll</p>
+									<input name="roll" type="text" class="uk-input" required>
+								</div>
+								<div class="input_group">
+									<p>Technology</p>
+									<select name="" id="" class="uk-select" required>
+										<option value="">Select Technology</option>
+										<option value="Computer Technology">Computer Technology</option>
+										<option value="Graphic Design Technology">Graphic Design Technology</option>
+										<option value="Printing Technology">Printing Technology</option>
+									</select>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<button type="submit"
+											class="uk-button uk-button-primary uk-width-1-1">Search</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</li>
+					<li>
+						<div class="result-form">
+							<form action="dashboard.html">
+								<div class="input_group">
+									<p>Email ID</p>
+									<input name="email" type="email" class="uk-input" required>
+								</div>
+								<div class="input_group">
+									<p>Password</p>
+									<input name="password" type="password" class="uk-input" required>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<button type="submit"
+											class="uk-button uk-button-primary uk-width-1-1">Login<span
+												uk-icon="sign-in"></span></button>
+									</div>
+									<div class="col-md-6">
+										<label><input class="uk-checkbox" type="checkbox" checked> Remember me</label>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<p></p>
+				</div>
+				<div class="col-md-6">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<!-- JS files -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

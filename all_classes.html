@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="d-b-p-dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | GAI | SRMS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- UI kit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/uikit-rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="d-b-p-dark">
+    <!-- top bar start from here -->
+    <header class="dashboard-head">
+        <nav class="navbar nam-nav-dark">
+            <div class="container-fluid pl-0">
+                <div class="col-md-3 p-0">
+                    <button><i data-toggle="collapse" data-target=".collapsibleNavId" class="fas fa-bars"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Q Result</span></button>
+                </div>
+                <div class="col-md-6">
+                    <div class="db-search-box">
+                        <form action="dashboard.html">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><input name="Search" type="search" placeholder="Search" required></td>
+                                        <td><button type="submit"><i class="fas fa-search"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- top bar end here -->
+    <!-- side bar start from here -->
+    <div id="dashboard-btn" class="dashboard-left-menu">
+        <ul>
+            <li class="collapse navbar-collapse collapsibleNavId">
+                <p><i class="fas fa-caret-down"></i>Main Category</p>
+            </li>
+            <li>
+                <a href="index.html" target="_blank"><i class="fas fa-globe"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Visit Website</span></a>
+            </li>
+            <li>
+                <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Dashboard</span></a>
+            </li>
+            <li>
+                <a href="result.html"><i class="fas fa-chart-line"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Result</span></a>
+            </li>
+            <li>
+                <a href="students_info.html"><i class="fas fa-user-graduate"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Students Info</span></a>
+            </li>
+            <li>
+                <a href="all_classes.html"><i class="fas fa-layer-group"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">All Classes</span></a>
+            </li>
+            <li>
+                <a href="all_subjects.html"><i class="fas fa-atlas"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">All Subjects</span></a>
+            </li>
+            <li class="collapse navbar-collapse collapsibleNavId">
+                <p><i class="fas fa-caret-down"></i>Create Menu</p>
+            </li>
+            <li>
+                <a href="add_class.html"><i class="fas fa-chalkboard-teacher"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Add Class</span></a>
+            </li>
+            <li>
+                <a href="add_subject.html"><i class="fas fa-book"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Add Subject</span></a>
+            </li>
+            <li>
+                <a href="subject_combination.html"><i class="fas fa-book-reader"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Subject Combination</span></a>
+            </li>
+            <li class="collapse navbar-collapse collapsibleNavId">
+                <p><i class="fas fa-caret-down"></i>Settings</p>
+            </li>
+            <li>
+                <a href="theme-setting.html"><i class="fas fa-palette"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Theme Setting</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- side bar end here -->
+    <!-- page contant area start from here -->
+    <!-- dashboard contant area start from here -->
+    <div class="db-content">
+        <div class="container pt-6">
+            <div class="create-class">
+                <h1 class="">Class Management</h1>
+                <button class="uk-button uk-button-primary" type="button"
+                    uk-toggle="target: #create-class">Create</button>
+            </div>
+            <div id="create-class" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Create Student Class</h2>
+                    </div>
+                    <div class="uk-modal-body nam-modal">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="allclasses.html">All Classes</a></li>
+                            <li><span>Create Class</span></li>
+                        </ul>
+                        <form action="">
+                            <label for="">
+                                <p>Class Name</p>
+                                <input class="uk-input" type="text" placeholder="Eg- One, Two, Three etc">
+                            </label>
+                            <label for="">
+                                <p>Class Name in Numeric</p>
+                                <input class="uk-input" type="text" placeholder="Eg- 1, 2, 3 etc">
+                            </label>
+                            <label for="">
+                                <p>Section</p>
+                                <input class="uk-input" type="text" placeholder="Eg- A, B, C etc">
+                            </label>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                        <button type="submit" class="uk-button uk-button-primary">Create</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div id="update-class" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Update Student Class Info</h2>
+                    </div>
+                    <div class="uk-modal-body nam-modal">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="allclasses.html">All Classes</a></li>
+                            <li><span>Update Class</span></li>
+                        </ul>
+                        <form action="">
+                            <label for="">
+                                <p>Class Name</p>
+                                <input class="uk-input" type="text" value="One">
+                            </label>
+                            <label for="">
+                                <p>Numeric</p>
+                                <input class="uk-input" type="text" value="1">
+                            </label>
+                            <label for="">
+                                <p>Section</p>
+                                <input class="uk-input" type="text" value="A">
+                            </label>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <a id="delete-class" class="uk-button uk-button-default" href="#">Delete</a>
+                        <button type="reset" class="uk-button uk-button-secondary">Reset</button>
+                        <button type="submit" class="uk-button uk-button-primary">Update</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="create-class">
+                <h3>View Classes Info</h3>
+                <ul class="uk-breadcrumb">
+                    <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="allclasses.html">All Classes</a></li>
+                    <li><span>Update Class</span></li>
+                </ul>
+                <div class="breadcrumb-searchbox">
+                    <label for="">Show <input type="number" value="25"> Items</label>
+                    <form action="">
+                        <input type="search" placeholder="Search" required>
+                        <button type="menu"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="uk-overflow-auto nam-class-table">
+                    <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
+                        <thead class="">
+                            <tr>
+                                <th>#</th>
+                                <th>Class Name</th>
+                                <th>Class Name Numeric</th>
+                                <th>Section</th>
+                                <th>Creation Date</th>
+                                <th class="text-center">Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <td>1</td>
+                                <td>One</td>
+                                <td>1</td>
+                                <td>A</td>
+                                <td>9/22/2019 9:18:23 PM</td>
+                                <td class="text-center"><button class="uk-button uk-button-link" type="button"
+                                        uk-toggle="target: #update-class"><i class="far fa-edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>One</td>
+                                <td>1</td>
+                                <td>B</td>
+                                <td>9/22/2019 9:18:23 PM</td>
+                                <td class="text-center"><button class="uk-button uk-button-link" type="button"
+                                        uk-toggle="target: #update-class"><i class="far fa-edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Two</td>
+                                <td>2</td>
+                                <td>A</td>
+                                <td>9/22/2019 9:18:23 PM</td>
+                                <td class="text-center"><button class="uk-button uk-button-link" type="button"
+                                        uk-toggle="target: #update-class"><i class="far fa-edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Two</td>
+                                <td>2</td>
+                                <td>A</td>
+                                <td>9/22/2019 9:18:23 PM</td>
+                                <td class="text-center"><button class="uk-button uk-button-link" type="button"
+                                        uk-toggle="target: #update-class"><i class="far fa-edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Three</td>
+                                <td>3</td>
+                                <td>A</td>
+                                <td>9/22/2019 9:18:23 PM</td>
+                                <td class="text-center"><button class="uk-button uk-button-link" type="button"
+                                        uk-toggle="target: #update-class"><i class="far fa-edit"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dashboard contant area end -->
+
+
+
+
+
+
+
+    <!-- scroll up btn -->
+    <a class="scroll-up-btn" href="#" uk-scroll><span uk-icon="icon: chevron-up; ratio: 2"></span></a>
+    <!--  -->
+
+    <!-- JS files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- delete class modal -->
+    <script>
+        UIkit.util.on('#delete-class', 'click', function (e) {
+            e.preventDefault();
+            e.target.blur();
+            UIkit.modal.confirm('<center>Do you want delete this record</center>').then(
+                function () {
+                    console.log('Confirmed.')
+                },
+                function () {
+                    console.log('Rejected.')
+                });
+        });
+    </script>
+    <!-- delete class modal -->
+
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/* custom uk bootstap start */
+.scroll-up-btn {
+
+    position: fixed;
+    right: 0;
+    margin: 15px;
+    margin-right: 30px;
+    bottom: 0;
+}
+
+.scroll-up-btn span {
+    opacity: .8;
+    background: #303030;
+    color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: linear .3s;
+    padding: 5px;
+}
+
+.scroll-up-btn span:hover {
+    opacity: 1;
+    transition: linear .2s;
+}
+
+/* custom uk bootstap end*/
+html,
+body {
+    background: #F0EFF4;
+}
+
+.main-header {
+    background: #15C5D2;
+    color: white;
+    padding: 20px 0;
+}
+
+.main-header nav {}
+
+.main-header nav h1 {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-family: Raleway;
+    margin-bottom: 5px;
+}
+
+.main-header nav p {
+    margin: 0;
+    font-size: 25px;
+}
+
+.page-area {
+    padding: 120px 0;
+}
+
+.main-form {
+    width: 393px;
+    margin: auto;
+}
+
+.nam-btn-group {
+    margin: 0;
+    background: #15C5D2;
+}
+
+.nam-btn-group li {
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0;
+}
+
+.nam-btn-group li a {
+    font-size: 18px !important;
+    ;
+
+    font-weight: 600;
+
+    padding: 0 30px;
+
+}
+
+.result-form {
+    padding: 30px;
+    background: white;
+    border-bottom: 4px solid #DAD9DE;
+}
+
+.result-form button {}
+
+.result-form label {
+    color: #99989C;
+}
+
+.result-form label input {}
+
+.input_group {
+    margin-bottom: 20px;
+}
+
+.input_group p {
+    margin-bottom: 5px;
+    color: #99989C;
+}
+
+.input_group input {
+    height: 50px;
+    background: #F0EFF4;
+    border: 2px solid transparent;
+}
+
+.input_group input:focus {
+    border: 2px solid #F0EFF4;
+}
+
+.input_group select {
+    height: 50px !important;
+    background: #F0EFF4;
+    border: 2px solid transparent;
+}
+
+.input_group select:focus {
+    border: 2px solid #F0EFF4;
+}
+
+.input_group select option {}
+
+/* Result Sheet CSS start from here */
+#nam-container {
+    max-width: 800px;
+}
+
+.sheet {
+    padding: 32px;
+    background: white;
+    margin-top: 50px;
+}
+
+.result-info {}
+
+.sheet h3 {}
+
+.sheet table {}
+
+.sheet table thead tr th {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px;
+    color: #333333;
+}
+
+.sheet table tbody tr td {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px;
+    color: #333333;
+    vertical-align: middle;
+}
+
+.result-btn {
+    margin: 30px 0;
+}
+
+/* Result Sheet CSS end */
+
+/* Dashboard CSS Start from here */
+.d-b-p-dark {
+    background: #121212;
+}
+
+.dashboard-left-menu {
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    background: #1C1C1C;
+    z-index: 1;
+}
+
+.dashboard-left-menu:hover {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dashboard-head {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nam-nav-dark {
+    background: #272727;
+    padding: 20px;
+}
+
+.nam-nav-dark button {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.nam-nav-dark button span {
+
+    margin-left: 14px;
+}
+
+.nam-nav-dark button:hover {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.nam-nav-dark button i {
+
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.db-search-box {
+    width: 550px;
+    margin: auto;
+}
+
+.db-search-box form {}
+
+.db-search-box form table {
+    width: 100%;
+}
+
+.db-search-box form table tbody {
+    width: 100%;
+}
+
+.db-search-box form table tbody tr {
+    border: 1px solid #303030;
+}
+
+.db-search-box form table tbody tr td {}
+
+.db-search-box form table tbody tr td input {
+    width: 100%;
+    background: #121212;
+    color: #ffffffe0;
+    padding: 3px;
+    padding-left: 10px;
+    border: none;
+}
+
+.db-search-box form table tbody tr td button {
+    transition: linear .2s;
+    background: #ffffff14;
+    display: block;
+    padding: 3px 5px;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+}
+
+.db-search-box form table tbody tr td button:hover {
+    background: #3E3E3E;
+    transition: linear;
+}
+
+.db-search-box i {
+    color: #ffffff80;
+    margin-left: 10px !important;
+}
+
+.dashboard-left-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 90px;
+    background: #1C1C1C;
+}
+
+.dashboard-left-menu ul li p {
+    padding: 10px 24px;
+    color: gainsboro;
+    margin: 0;
+    background: #3e3e3e;
+}
+
+.dashboard-left-menu ul li p i {
+
+    color: white;
+    margin-right: 24px;
+    width: 20px;
+    text-align: center;
+}
+
+.dashboard-left-menu ul li a {
+    transition: linear .3s;
+    text-decoration: none;
+    display: block;
+    padding: 10px 24px;
+    color: #fff;
+}
+
+.dashboard-left-menu ul li a[title] {
+}
+
+.dashboard-left-menu ul li a:hover {
+    background: #333333;
+    transition: linear;
+    text-decoration: none;
+}
+
+.dashboard-left-menu ul li a span {
+    margin-left: 24px;
+    padding-right: 30px;
+}
+
+.dashboard-left-menu ul li a i {
+    color: #909090;
+    width: 20px;
+    text-align: center;
+}
+
+.db-left-nav-active {
+    background: #333333;
+}
+
+.db-left-nav-active a i {
+    color: #fff !important;
+}
+
+.db-content {
+    padding-top: 75px;
+}
+
+.db-card {
+    display: block;
+    margin: 15px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: linear .2s;
+}
+
+.db-card:hover {
+    background-image: none !important;
+    background-color: #33333352;
+    transition: linear .2s;
+}
+
+.db-card h3 {
+    color: white;
+    background: #333333;
+    line-height: inherit;
+    display: initial;
+}
+
+
+/* Dashboard CSS end */
+.create-class {
+    padding: 50px;
+    background: #fafafa;
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.create-class h1 {
+    margin: 0;
+    float: left;
+}
+
+.create-class button {
+    float: right;
+    margin-top: 4px;
+}
+
+.create-class p {
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+.nam-modal {}
+
+.nam-modal form {}
+
+.nam-modal form label {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nam-modal form label p {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.nam-modal form label input {}
+
+.nam-class-table {}
+
+.nam-class-table table th,
+.nam-class-table table td {
+    text-align: left;
+    vertical-align: middle;
+}
+.nam-class-table table th button, .nam-class-table table td button{
+    margin: 0;
+    float: none;
+}
+.nam-class-table table td button {
+    float: none;
+}
+
+.breadcrumb-searchbox {
+    overflow: hidden;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.breadcrumb-searchbox ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 !important;
+}
+
+.breadcrumb-searchbox ul li a {
+    border-radius: 0;
+    padding: 4px 12px;
+}
+
+.breadcrumb-searchbox form {
+    float: right;
+    position: relative;
+}
+
+.breadcrumb-searchbox nav {
+    float: right;
+    position: relative;
+    border-radius: 0;
+}
+
+.breadcrumb-searchbox form button {
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    background: #586F82;
+    color: white;
+    transition: linear 0.1s;
+}
+
+.breadcrumb-searchbox form input {
+    padding-left: 10px;
+    border: 1px solid #586F82;
+    border-right: none;
+}
+
+.breadcrumb-searchbox form button:hover {
+    background: #3F5462;
+    transition: linear 0.1s
+}
+
+.breadcrumb-searchbox label {
+    color: #586F82;
+}
+
+.breadcrumb-searchbox label input {
+    color: #586F82;
+    font-weight: 500;
+    text-align: center;
+    width: 65px;
+    border: 1px solid #586F82;
+}
+
+.nam-drop-nav {
+    margin-top: 0;
+}
+
+.db-left-nav-active .nam-drop-nav ul li a i {
+    color: #909090;
+}
+
+.sortable {}

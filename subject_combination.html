@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="d-b-p-dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | GAI | SRMS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- UI kit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/uikit-rtl.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="d-b-p-dark">
+    <!-- top bar start from here -->
+    <header class="dashboard-head">
+        <nav class="navbar nam-nav-dark">
+            <div class="container-fluid pl-0">
+                <div class="col-md-3 p-0">
+                    <button><i data-toggle="collapse" data-target=".collapsibleNavId" class="fas fa-bars"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Q Result</span></button>
+                </div>
+                <div class="col-md-6">
+                    <div class="db-search-box">
+                        <form action="dashboard.html">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><input name="Search" type="search" placeholder="Search" required></td>
+                                        <td><button type="submit"><i class="fas fa-search"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- top bar end here -->
+    <!-- side bar start from here -->
+    <div id="dashboard-btn" class="dashboard-left-menu">
+        <ul>
+            <li class="collapse navbar-collapse collapsibleNavId">
+                <p><i class="fas fa-caret-down"></i>Main Category</p>
+            </li>
+            <li>
+                <a href="index.html" target="_blank"><i class="fas fa-globe"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Visit Website</span></a>
+            </li>
+            <li>
+                <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Dashboard</span></a>
+            </li>
+            <li>
+                <a href="result.html"><i class="fas fa-chart-line"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Result</span></a>
+            </li>
+            <li>
+                <a href="students_info.html"><i class="fas fa-user-graduate"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Students Info</span></a>
+            </li>
+            <li>
+                <a href="all_classes.html"><i class="fas fa-layer-group"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">All Classes</span></a>
+            </li>
+            <li>
+                <a href="all_subjects.html"><i class="fas fa-atlas"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">All Subjects</span></a>
+            </li>
+            <li class="collapse navbar-collapse collapsibleNavId">
+                <p><i class="fas fa-caret-down"></i>Create Menu</p>
+            </li>
+            <li>
+                <a href="add_class.html"><i class="fas fa-chalkboard-teacher"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Add Class</span></a>
+            </li>
+            <li>
+                <a href="add_subject.html"><i class="fas fa-book"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Add Subject</span></a>
+            </li>
+            <li>
+                <a href="subject_combination.html"><i class="fas fa-book-reader"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Subject Combination</span></a>
+            </li>
+            <li class="collapse navbar-collapse collapsibleNavId">
+                <p><i class="fas fa-caret-down"></i>Settings</p>
+            </li>
+            <li>
+                <a href="theme-setting.html"><i class="fas fa-palette"></i><span
+                        class="collapse navbar-collapse collapsibleNavId">Theme Setting</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- side bar end here -->
+    <!-- page contant area start from here -->
+    <div class="db-content">
+        <div class="container pt-6">
+            <div class="create-class">
+                <h1 class="">Manage Subjects Combination</h1>
+                <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #create-class">Add</button>
+            </div>
+            <div id="create-class" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Add Subject Combination</h2>
+                    </div>
+                    <div class="uk-modal-body nam-modal">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="allsubjects.html">Subject</a></li>
+                            <li><a href="allsubjects.html">Subject Combination</a></li>
+                            <li><span>Add Subject Combination</span></li>
+                        </ul>
+                        <form action="">
+                            <label for="">
+                                <p>Class</p>
+                                <select name="" id="" class="uk-select">
+                                    <option value="">Select Class</option>
+                                    <option value="One">One</option>
+                                </select>
+                            </label>
+                            <label for="">
+                                <p>Subject</p>
+                                <select name="" id="" class="uk-select">
+                                    <option value="">Select Subject</option>
+                                    <option value="One">Bangla I</option>
+                                </select>
+                            </label>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                        <button type="submit" class="uk-button uk-button-primary">Add</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="create-class">
+                <h3>View Subjects Info</h3>
+                <ul class="uk-breadcrumb">
+                    <li><a href="dashboard.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="allclasses.html">Subject</a></li>
+                    <li><a href="allclasses.html">All Subjects</a></li>
+                    <li><span>Manage Subject</span></li>
+                </ul>
+                <div class="breadcrumb-searchbox">
+                    <label for="">Show <input type="number" value="10"> Items</label>
+                    <form action="">
+                        <input type="search" placeholder="Search" required>
+                        <button type="menu"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="uk-overflow-auto nam-class-table mb-4">
+                    <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
+                        <thead class="">
+                            <tr>
+                                <th>#</th>
+                                <th>Class and Section</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="" uk-sortable="cls-custom: sortable">
+                            <tr class="sortable uk-sortable-handle">
+                                <td>1</td>
+                                <td>One Section-A</td>
+                                <td>Bangla I</td>
+                                <td>Active</td>
+                                <td><button id="delete-class" type="menu" class="uk-button uk-button-link"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                            <tr class="sortable uk-sortable-handle">
+                                <td>2</td>
+                                <td>One Section-A</td>
+                                <td>Bangla II</td>
+                                <td>Active</td>
+                                <td><button id="delete-class" type="menu" class="uk-button uk-button-link"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                            <tr class="sortable uk-sortable-handle">
+                                <td>3</td>
+                                <td>One Section-A</td>
+                                <td>English I</td>
+                                <td>Active</td>
+                                <td><button id="delete-class" type="menu" class="uk-button uk-button-link"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                            <tr class="sortable uk-sortable-handle">
+                                <td>4</td>
+                                <td>Two Section-A</td>
+                                <td>English II</td>
+                                <td>-</td>
+                                <td><button id="delete-class" type="menu" class="uk-button uk-button-link"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                            <tr class="sortable uk-sortable-handle">
+                                <td>5</td>
+                                <td>Two Section-B</td>
+                                <td>Math</td>
+                                <td>Active</td>
+                                <td><button id="delete-class" type="menu" class="uk-button uk-button-link"><i class="fas fa-times"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="breadcrumb-searchbox" style="border: none;">
+                    <label for="">Showing 1-5 of 5 entries</label>
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#">&raquo;</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dashboard contant area end -->
+
+
+
+
+
+
+
+    <!-- scroll up btn -->
+    <a class="scroll-up-btn" href="#" uk-scroll><span uk-icon="icon: chevron-up; ratio: 2"></span></a>
+    <!--  -->
+
+    <!-- JS files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- delete class modal -->
+    <script>
+            UIkit.util.on('#delete-class', 'click', function (e) {
+                e.preventDefault();
+                e.target.blur();
+                UIkit.modal.confirm('<center>Do you want delete this record</center>').then(
+                    function () {
+                        console.log('Confirmed.')
+                    },
+                    function () {
+                        console.log('Rejected.')
+                    });
+            });
+        </script>
+        <!-- delete class modal -->
+</body>
+
+</html>
